@@ -7,4 +7,4 @@ can be run; a bamazonCustomer js file and a bamazonManager.js file.  The custome
 
 Youtube Demo:
 
-[![Bamazon Demo](https://img.youtube.com/vi/https://www.youtube.com/watch?v=m_LwzLWt2ZQ&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=https://www.youtube.com/watch?v=m_LwzLWt2ZQ&feature=youtu.be)
+[Bamazon Demo](https://www.youtube.com/watch?v=m_LwzLWt2ZQ&feature=youtu.be)
