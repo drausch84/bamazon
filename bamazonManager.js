@@ -251,6 +251,7 @@ function addProduct() {
                 if (err) reject(err);
                 resolve(res);
             });
+
             // log message
         }).then(function() {
             console.log("The product has been added to the inventory.");
