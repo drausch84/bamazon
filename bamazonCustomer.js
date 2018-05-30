@@ -121,7 +121,7 @@ function menu() {
             if (savedData.answer) {
                 var updatedQuantity = parseInt(savedData.result[0].stock_quantity) - parseInt(savedData.answer.quantity);
                 var itemId = savedData.answer.item;
-                var totalCost = parseInt(savedData.result[0].price) * parseInt(savedData.answer.quantity);
+                var totalCost = parseFloat(savedData.result[0].price) * parseFloat(savedData.answer.quantity);
                 connection.query("UPDATE products SET ? WHERE ?", [{
                     stock_quantity: updatedQuantity
                 }, {
@@ -129,7 +129,7 @@ function menu() {
                 }], function(err, res) {
                     if (err) throw err;
                     console.log("------------------------------------");
-                    console.log("Your order total cost $" + totalCost);
+                    console.log("Your order total cost $" + totalCost.toFixed(2));
                     console.log("-------------------------------------");
                     connection.destroy();
                 });
